@@ -18,7 +18,7 @@ def format_years(years):
     """
     rounded = round(years, 2)
     if abs(rounded - (int(rounded) + 0.5)) < 1e-6:
-        return f"{int(rounded)} i pół roku"
+        return int(rounded)+0.5
     else:
         return rounded
 
